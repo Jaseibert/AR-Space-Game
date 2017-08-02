@@ -14,6 +14,8 @@ class SpaceShip: SCNNode {
     // Create the SceneKit Model
     func loadModel() {
         guard let virtualObjectScene = SCNScene(named:"art.scnassests/ship.sch") else {return}
+        
+        // Establish SceneKit Node
         let wrapperNode = SCNNode()
         for child in virtualObjectScene.rootNode.childNodes {
             wrapperNode.addChildNode(child)

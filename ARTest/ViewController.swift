@@ -11,15 +11,17 @@ import ARKit
 
 class ViewController: UIViewController {
 
-    
+    // Connect the outlets
     @IBOutlet weak var sceneView: ARSCNView!
     @IBOutlet weak var counterLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // Setup SceneKit Scene
         let scene = SCNScene()
-        
         sceneView.scene = scene
+        
     }
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
@@ -44,19 +46,10 @@ class ViewController: UIViewController {
         sceneView.scene.rootNode.addChildNode(ship)
     }
     
-    
+    //Define Random Positions
     func randomPosition(lowerBound lower: Float, upperBound upper: Float) -> Float {
         return Float(arc4random()) / Float(UInt32.max) * (lower - upper) + upper
         
     }
-    
-    
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
-
 }
 
