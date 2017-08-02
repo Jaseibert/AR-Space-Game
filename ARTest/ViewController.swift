@@ -2,7 +2,7 @@
 //  ViewController.swift
 //  ARTest
 //
-//  Created by Jeremy Seibert on 6/24/17.
+//  Created by Jeremy Seibert on 7/1/17.
 //  Copyright © 2017 Jeremy Seibert. All rights reserved.
 //
 
